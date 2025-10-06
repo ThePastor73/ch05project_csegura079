@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validating HTML Forms with JavaScript</title>
+
+    <!-- Link Link to CSS file -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Link to JavaScript file -->
+    <script src="scripts/form-validation.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Validating HTML Forms with JavaScript</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <p>This page demonstrates how to validate HTML forms using JavaScript.</p>
+
+            <h2>Contact Form</h2>
+    <form id="contactForm" action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" class="required" required>
+      <br><br>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" class="required" required>
+      <br><br>
+
+      <label for="inquiry">Reason for Contact:</label>
+      <select id="inquiry" name="inquiry" class="required" required>
+        <option value="">-- Please Select --</option>
+        <option value="support">Technical Support</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+      <br><br>
+
+      <input type="button" value="Submit Form" id="submitBtn">
+    </form>
+
+    <!-- Span to display number of missing required fields -->
+<p>
+  <span id="missing-count">All required fields completed.</span>
+</p>
+        </section>
+
+         <h2>Validation Screenshot</h2>
+    <figure>
+      <img src="media/form-validation.png" alt="Form showing validation results" width="600">
+      <figcaption>Screenshot showing validation with red border on required fields.</figcaption>
+    </figure>
+    </section>
+    </main>
+
+    <footer>
+        <p>©2025, Cristian Segura</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
